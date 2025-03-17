@@ -1,0 +1,27 @@
+<img id="sw" src ="./img/photo.jpg">
+<script>
+(a => {
+a.oncanplaythrough = () => {
+document.getElementById('sw').addEventListener('click', ()=>{a.play()});
+};
+})(new Audio("./sound/music.mp3"));
+</script>
+<button id="play-sound1">baby</button>
+<audio id="audio1" src="sound/music2.mp3"></audio>
+<img id="sw2" src ="./img/photo2.jpg">
+<script>
+const audio1 = document.getElementById('audio1');
+document.getElementById('play-sound1').addEventListener('click', () => {
+    audio1.play();
+});
+(a2 => {
+a2.oncanplaythrough = () => {
+document.getElementById('sw2').addEventListener('click', ()=>{a2.play()});
+};
+})(new Audio("./sound/music2.mp3"));
+</script>
+<input type="button" value="test" onClick="location.href='test.html'">
+<BODY>
+<h1>配り</h1>
+<input type="button" value="配り" onClick="location.href='files/'">
+</BODY>
